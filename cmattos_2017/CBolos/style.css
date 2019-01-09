@@ -1,0 +1,162 @@
+﻿.row {
+    margin-left:0px !important;
+    margin-right:0px !important;
+}
+
+@font-face {
+	font-family:"BLACKJAR.ttf";
+	font-style:normal;
+	src: url(BLACKJAR.TTF);
+}
+
+body { background-color: antiquewhite; margin:0px; }
+/*header{ background-color: #ffa85a; }*/
+#cabecalho {
+	/*background-color: #ffa85a;*/
+	background-image: linear-gradient( to right, white 15%, #960060 );
+	height: 80px;
+	width: 100%;
+}
+.logo {
+	color: #960060;
+	cursor: pointer;
+	display: inline-block;
+	font-family:"BLACKJAR.ttf";
+	font-size:30px;
+	line-height: initial;
+	margin-left: 10px;
+	text-align:center;
+	width: 160px;
+}
+.logoFacebook { height: 50px; margin-top: 15px; }
+.menu {
+	display: inline-block;
+	float: right;
+	position: relative;
+	height:100%;
+}
+div.link {
+	color: white;/*#332112;*/
+	display: inline-block;
+	font: normal small-caps normal 16px/1.4 Georgia;
+	font-size: 24px;
+	text-align: center;
+	cursor: pointer;
+	width: 160px;
+	height:100%;
+	vertical-align:bottom;
+}
+.link span {
+	vertical-align: -25px;
+	line-height: normal;
+	height:100%;
+}
+
+div.link_fb {
+	display: inline-block;
+	font-size: 24px;
+	//text-align: center;
+	cursor: pointer;
+	height:100%;
+	width: 60px;
+}
+
+
+
+/*  EFEITO MOUSE SOBRE  */
+
+div.link:hover {
+	background-color: antiquewhite; opacity: 0.9; transition: 0.6s;
+	/*background-image: linear-gradient( to top, antiquewhite, #ffa85a );*/
+}
+div.link:active { opacity:0.5; background-color: gray; color: white; }
+div.link:not( :hover ) { transition:0.4s; }
+
+
+
+.divInfo {
+	text-align: center;
+}
+.divInfoConteudo {
+	display: inline-block;
+
+	text-align: justify;
+}
+.divInfoLocal { margin-left: 20px; }
+ul:before {
+    content:attr(data-header);
+    font-size:120%;
+    font-weight:bold;
+    margin-left:-15px;
+}
+.corRosa { color: #960060; font-weight: bold; }
+
+
+
+section {
+	font: normal small-caps normal 16px/1.4 Georgia;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.destaque {
+    border-radius: 25px;
+    background: white;
+    border: 1px solid darkcyan;
+	margin-top: 30px;
+}
+.imgdestaque {
+	/*display: inline-block;*/
+	position: static;
+	float: left;
+	top: 10px; 
+	left: 10px; 
+	width:60px; 
+	height:auto;
+}
+.conteudo {
+	/*display: inline-block;*/
+	padding: 0px 40px;
+}
+
+.tituloSecao { font-size:24px; }
+
+.divFotos { min-height: 150px; margin-left: auto; margin-right: auto; text-align: center; }
+.divCadaFoto {
+	cursor: pointer;
+	display: inline-block;
+	border: 2px;
+	border-top: 0px;
+	border-color: burlywood;
+	border-radius: 20px;
+	border-style: solid;
+	margin: 0px 10px;
+	max-width: 200px;
+	text-align: center;
+}
+.imgFotos {
+	width: auto; height: 150px; vertical-align: middle;
+ }
+ 
+#rodape {
+	color: white;
+	font: normal  normal 14px/1.0 Arial;
+
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	height:40px;
+	width:100%;
+	background:#3f2c24;
+ }
+.informacoes { margin-left:auto; margin-right: auto; width: 600px; }
+.localizacao, .contato { display: inline-block; margin-left: 30px; margin-top: 5px; text-decoration:none; }
+
+
+	@media(max-width:768px){
+		.menu { min-width: 50%; height: 70%; }
+		div.link{ color: darkorange; font-size: 14px; width: 75px; } 
+		.link span { vertical-align: -20px; }
+		.logoFacebook { height: 30px; margin-left: 20px; }
+		.divInfo { text-align: justify; }
+		section{ margin-top: 70px; }
+	}

@@ -1,0 +1,102 @@
+﻿html {
+    height: 100%;
+}
+body {
+    background-color: darkslategrey;
+    background-image: linear-gradient( to bottom, transparent, rgba(0,250,200,.4) );
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Menu */
+@media (max-width: 500px) {
+	.menu div {
+		position: relative;
+		display: table-header-group;
+	}
+	.destaque { margin-top:0px; }
+	.op { font-size: 20px; }
+}
+@media (min-width:501px) {
+	.menu div {
+		position: absolute;
+		display: inline-block;
+	}
+	.destaque { margin-top: 50px; }
+	.left { left: 30px; }
+	.right { font-size: 30px; right: 30px; }
+	.op { font-size: 28px; }
+}
+
+
+    .menu { margin-top: 30px; }
+	
+    .left { max-width: 250px; height: 90px; }
+    img { width: 100%; height: auto; }
+    .logo_text { 
+	width:200px;
+	color:#8AC007;
+	margin-top:-20px;
+	margin-left:60px; 
+    }
+	
+    .right { color: #8AC007; right: 30px; }
+    a.menulink { 
+	color: #8AC007; 
+	margin: 0px 30px; 
+	text-decoration: none; 
+	max-width: 200px; 
+    }
+    .menulink:active { font-size: 28px; }
+
+
+/* Destaque */
+	div.destaque { max-width: 350px; margin-left: auto; margin-right: auto; }
+	.imgcarousel { width: 100%; height: auto; }
+
+
+/* Links */
+    .opcoes {
+	text-align: center;
+	width: 100%;
+    }
+	
+    .opcoes div { margin: 0px 0px; text-align: center; } 
+
+
+/* Caracteristicas dos links */
+    a.oplink { color: black; text-decoration: none; }
+
+    .op {
+	color:gainsboro;
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+	text-align: center;
+	width:250px;
+    }
+    .op:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+    }
+    .op:hover:after {
+	width: 100%;
+	background: blue;
+    }
+
+/* Rodapé */
+    footer {
+	color:white;
+	clear: both;
+	margin: 0;
+	position: absolute;
+	text-align: center;
+	/*height:50px;*/
+	width: 98%;
+    }

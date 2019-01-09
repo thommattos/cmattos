@@ -1,0 +1,21 @@
+.item { background-color: white; min-width: 200px; max-width: 280px; border-radius: 10px;
+	display: inline-table;
+	height:400px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+.item h2, img.produto { text-align:center; }
+.item img { 
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto; 
+	width: 60%; 
+	height:auto; 
+}
+.item h3, .item span { 
+	margin-left: 20px; 
+	margin-right: 20px; 
+	text-align: justify; 
+}
+.desc { text-align: left; }
+.centerBtn { text-align: center; }
